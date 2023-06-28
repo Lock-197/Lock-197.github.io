@@ -9,18 +9,19 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/3300d79e01.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Roboto:wght@300&display=swap');
+    </style>
+    <link rel="shortcut icon" href="Assets/image 2.png" />
     
-    <title>Document</title>
+    <title>Integrador</title>
 </head>
 <body>
     
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
             <div class="container-fluid">
-              <a href="pag-02.html">
+              <a href="index.html">
                 <img src="Assets/image 2.png" alt="Logo de la página" class="logo-img">
               </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,34 +37,36 @@
                   </li>
 
                   <li class="nav-item">
-                    <a class="nav-link" href="pag-02.html">Formulario</a>
+                    <a class="nav-link" href="pag-02.html">Contacto</a>
                   </li>
                 </ul>
+
+                <div class="contactos">
+                  <ul class="d-flex justify-content-center">
+                    <li class="li-contacto"><a href="#" class="email"><i class="far fa-envelope"></i></a></li>
+                    <li class="li-contacto"><a href="#" class="telefono"><i class="fas fa-phone-volume"></i></a></li>
+                    <li class="li-contacto"><a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a></li>
+                    <li class="li-contacto"><a href="#" class="instagram"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+                </div>
               </div>
             </div>
-            <div class="contactos">
-              <ul class="d-flex justify-content-center">
-                <li class="li-contacto"><a href="#" class="email"><i class="far fa-envelope"></i></a></li>
-                <li class="li-contacto"><a href="#" class="telefono"><i class="fas fa-phone-volume"></i></a></li>
-                <li class="li-contacto"><a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a></li>
-                <li class="li-contacto"><a href="#" class="instagram"><i class="fab fa-instagram"></i></a></li>
-            </ul>
-            </div>
+            
           </nav>
     </header>
     
     <section id="contact-us">
 
-      <div class="contenedor-contacto container-fluid">
+      <div class="contenedor-contacto">
 
-          <div class="der row d-flex">
+          <div class="der row d-flex justify-content-center">
               <form action="contact.php" method="post" class="col-lg-6 col-sm-auto row">
                   <fieldset>
-                      <legend class="contact">Contactenos</legend>
+                      <legend class="contact letra-titulo">Contactenos</legend>
 
                       <p>                          
                         <div class="row">
-                          <label for="name" class="col-lg-4 col-ms-4">Nombre(*):  </label>
+                          <!-- <label for="name" class="col-lg-4 col-ms-4">Nombre(*):  </label> -->
                           <br>
                           <span class="span ">
                             <input type="text" name="name" id="name" placeholder="¿Cual es tu nombre?" class="casilla">
@@ -73,7 +76,7 @@
                     </p>
                     <p>
                       <div class="row">
-                        <label for="phone" class="col-lg-3 col-ms-4">Teléfono:  </label>
+                        <!-- <label for="phone" class="col-lg-3 col-ms-4">Teléfono:  </label> -->
                         <br>
                         <span class="span">
                           <input for="phone" name="tel" id="tel" placeholder="¿Cual es tu número?" class="casilla">
@@ -83,7 +86,7 @@
                       <p>
                           
                           <div class="row">
-                            <label for="mail" class="col-lg-3 col-ms-4">Email(*): </label>
+                            <!-- <label for="mail" class="col-lg-3 col-ms-4">Email(*): </label> -->
                             <br>
                             <span class="span ">
                               <input type="email" name="mail" id="mail" placeholder="¿Cual es tu email?" class="casilla">
@@ -93,45 +96,45 @@
                       </p>
                       <p>
                         <div class="row">
-                        <label for="org" class="col-lg-4 col-ms-4">Organización: </label>
+                        <!-- <label for="org" class="col-lg-4 col-ms-4">Organización: </label> -->
                           <br>
                           <span class="span">
-                            <input type="text" name="org" id="org" placeholder="¿Cual es tu organización" class="casilla">
+                            <input type="text" name="org" id="org" placeholder="¿Cual es tu organización?" class="casilla">
                           </span>
                         </div>
                       </p>
                       <p>
                         <div class="row">
-                        <label for="pais" class="col-lg-3 col-ms-4">País: </label>
+                        <!-- <label for="pais" class="col-lg-3 col-ms-4">País: </label> -->
                           <br>
                           <span class="span">
-                            <input type="text" name="pais" id="pais" placeholder="¿Cual es tu país" class="casilla">
+                            <input type="text" name="pais" id="pais" placeholder="¿Cual es tu país?" class="casilla">
                           </span>
                         </div>
 
                       </p>
 
-                      <textarea name="message" id="message" placeholder="Mensaje" class="textarea-contact"></textarea>
+                      <textarea name="message" id="message" placeholder="Mensaje" class="textarea-contact casilla"></textarea>
 
                       <div class="d-flex justify-content-center">
-                        <button type="button" class="mt-5 button-contact btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Enviar Consulta</button>
+                        <button type="button" class="mt-5 button-contact btn btn-primary letra-texto" data-bs-toggle="modal" data-bs-target="#exampleModal">Enviar Consulta</button>
                       </div>
 
                       <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog">
                           <div class="modal-content">
                             <div class="modal-header">
-                              <h1 class="modal-title fs-5" id="exampleModalLabel">Envio de Formulario</h1>
+                              <h1 class="modal-title fs-5 letra-texto" id="exampleModalLabel">Envio de Formulario</h1>
                               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
-                            <div class="modal-body">
+                            <div class="modal-body letra-texto">
                               Formulario enviado correctamente.
                               <br>
                               <span><img src="Assets/list-ged1d381c2_1280_0.png" style="width: 450px;" alt=""></span>
                               Gracias por contactarnos.
                             </div>
                             <div class="modal-footer">
-                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                              <button type="button" class="btn btn-secondary letra-texto" data-bs-dismiss="modal">Cerrar</button>
                              
                             </div>
                           </div>
@@ -143,32 +146,51 @@
 
               <div class="col-lg-6 col-sm-auto row">
               <div>
-                <h1>Envíe su consulta. Atención telefónica de lu a vi de 10 a 17 hs.</h1>
-                <p>Ciudad de Buenos Aires - Argentina</p>
+                <h1 class="letra-titulo">Envíe su consulta. Atención telefónica de Lunes a Viernes de 10 a 17 hs.</h1>
+                <p class="letra-texto">Ciudad de Buenos Aires - Argentina</p>
 
                 <div class="d-grid justify-content-center">
-                  <a href="" class="numero m-lg-5">2645859654</a>
-                  <a href="" class="numero">alejandrosg197@gmail.com</a>
+                  <!-- <div>
+                    <i class="far fa-envelope"><span class="d-inline-flex"><a href="#" class="numero m-lg-5 letra-texto">2645859654</a></span></i>
+                    <a href=""></a>
+                  </div>
+                  <a href="" class="numero m-lg-5 letra-texto">2645859654</a> -->
+
+                  <div class="li-nav numero m-lg-5 letra-texto">
+                    <a href="#" class="etiq-a">
+                      <i class="far fa-envelope etiq-i"></i> 
+                      2645859654
+                  </a>
+                  </div>
+
+                  <div class="li-nav numero m-lg-5 letra-texto">
+                    <a href="#" class="etiq-a">
+                      <i class="fas fa-phone-volume etiq-i"></i>
+                      alejandrosg197@gmail.com
+                    </a>
+                  </div>
+                
                 </div>
-                <div>
-                  <img src="Assets/pngtree-whatsapp-mobile-software-icon-png-image_6315991.png" alt="" class="mundo-icon my-5">
-                </div>
-                <div>
-                  <h5>Contáctenos por Whastapp</h5>
-                </div>
+
+ 
               </div>
               </div>
           </div>
 
       </div>
 
+
+
   </section>
+  <div class="d-flex justify-content-center">
+    <a href="#"><img src="Assets/ui_interface_up_to_top_navigation_arrow_direction_icon_219782.png" alt="" class="flecha"></a>
+  </div>
 
   <footer>
     <section class="row">
         <div class="container-fluid p-3">
             <div class="col-12 d-flex justify-content-center">
-                <p>
+                <p class="letra-texto">
                     " © 1997 – 2023 Troop Software Factory | "
                     <p>Términos y condiciones del sitio</p>
                 </p>
