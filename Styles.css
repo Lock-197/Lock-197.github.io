@@ -1,6 +1,9 @@
 *{
     margin: 0;
 }
+body{
+    overflow-x: hidden;
+}
 .logo-img{
     width: 100px;
 }
@@ -63,13 +66,36 @@ li{
 /* FONTs */
 .letra-titulo{
     font-family: roboto slab;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+}
+.letra-titulo-contacto{
+    font-family: roboto slab;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .letra-texto{
     font-family: roboto ;
     font-size: 17px;
     font-weight: bold;
-
+    text-align: justify;
+}
+.letra-texto-contacto{
+    font-family: roboto ;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+}
+.letra-texto-item{
+    font-family: roboto;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: -webkit-center;
 }
 .espacio-card{
     margin-top: 15px;
@@ -142,7 +168,7 @@ li{
     height: 95px;
 }
 .space-secc{
-    margin-bottom: 85px;
+    margin-bottom: 50px;
     margin-top: 50px!important;
 }
 .h2-secc{
@@ -180,8 +206,9 @@ fieldset{
     padding: 25px 40px;
 }
 .contact{
-    font-size: 30px;
-    margin-bottom: 40px;
+    font-size: 40px;
+    margin-bottom: 30px;
+    margin-top: 10px;
 }
 .casilla{
     width: 90%;
@@ -228,7 +255,7 @@ label{
     /* margin-left: 0.5rem;
     margin-right: 0.5rem; */
     font-weight: bold;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     font-size: 16px;
     line-height: 2.8;
     padding: 0 1.8em;
@@ -274,6 +301,14 @@ label{
 .td-padding{
     padding-right: 15px;
 }
+.letra-titulo-contacto1{
+    font-family: roboto slab;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* SOBRE NOSOTROS */
 .hero-pag-01{
     padding: 25px 40px;
