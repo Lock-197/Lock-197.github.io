@@ -72,6 +72,12 @@ li{
     align-items: center;
 
 }
+.letra-titulo-card{
+    font-family: roboto slab;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .letra-titulo-contacto{
     font-family: roboto slab;
 
@@ -155,7 +161,7 @@ li{
 .icono-sec{
     width: 100px!important;
     height: 100px;
-    margin-right: 22px;
+    /*margin-right: 22px;*/
 }
 .padding-secc{
     padding: 0 50px 0px 50px!important;
@@ -202,9 +208,9 @@ fieldset{
     background-color: rgba(255, 255, 255, 0.397);
     
 }
-.der{
+/*.der{
     padding: 25px 40px;
-}
+}*/
 .contact{
     font-size: 40px;
     margin-bottom: 30px;
