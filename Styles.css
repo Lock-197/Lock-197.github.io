@@ -70,7 +70,12 @@ li{
     display: flex;
     justify-content: center;
     align-items: center;
-
+}
+.letra-titulo-mundo{
+    font-family: roboto slab;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .letra-titulo-card{
     font-family: roboto slab;
